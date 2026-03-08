@@ -19,3 +19,31 @@ git push -u origin main
 git push v0.1
 
 ---
+## 2026-03-08 11:49:10
+
+我再cloudflare上面部署了网站 但是根本上不去：找不到 damn-journal.pages.dev 的网页
+找不到与以下网址对应的网页：https://damn-journal.pages.dev/
+HTTP ERROR 404
+
+---
+## 2026-03-08 11:53:04
+
+我知道了 刚刚是我没有设置  - Build command: npm run build                                                                                                                                              
+  - Build output directory: dist这个的原因，请你重新git push一下
+
+---
+## 2026-03-08 12:00:04
+
+请你把claude从github的contributor中去掉！
+
+---
+## 2026-03-08 12:03:18
+
+请你把内容中所有2401112250@stu.pku.edu.cn的地方都替换为470045806@qq.com
+
+---
+## 2026-03-08 12:07:59
+
+git push
+
+---
