@@ -12,113 +12,315 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </p>
 
     <!-- Quick CTA -->
-    <div class="bg-(--color-accent)/10 border border-(--color-accent)/30 rounded p-6 mb-10 text-center">
-      <p class="text-(--color-text-primary) font-semibold mb-2">投稿邮箱 / Submission Email</p>
-      <a href="mailto:470045806@qq.com" class="text-lg text-(--color-accent) font-mono">
+    <div class="bg-(--color-accent)/10 border border-(--color-accent)/30 rounded-lg p-6 mb-12 text-center">
+      <p class="text-(--color-text-primary) font-semibold mb-2 text-lg">📬 投稿邮箱 / Submission Email</p>
+      <a href="mailto:470045806@qq.com" class="text-2xl text-(--color-accent) font-mono font-bold hover:text-(--color-accent-hover)">
         470045806@qq.com
       </a>
-      <p class="text-xs text-(--color-text-secondary) mt-2">邮件标题请注明"《DAMN》投稿" / Please include "DAMN Submission" in the subject line</p>
+      <p class="text-xs text-(--color-text-secondary) mt-3">邮件标题请注明 <span class="text-(--color-accent) font-semibold">"《DAMN》投稿"</span> / Please include "DAMN Submission" in the subject line</p>
+      <p class="text-xs text-(--color-text-secondary) mt-1">免费投稿，在线发表，不收取任何费用</p>
     </div>
 
-    <div class="prose">
-      <!-- 征稿范围 -->
-      <h2>征稿范围 / Scope</h2>
+    <!-- Section 1: 征稿范围 -->
+    <section class="mb-12">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-1.5 h-8 bg-(--color-accent) inline-block rounded-full"></span>
+        <h2 class="text-xl font-bold text-(--color-accent)" style="font-family: var(--font-serif);">
+          征稿范围 / Scope
+        </h2>
+      </div>
 
-      <p>《DAMN》欢迎来自一切学科领域的投稿。</p>
+      <p class="text-(--color-text-primary) mb-4 leading-relaxed">
+        《DAMN》欢迎来自<strong>一切学科领域</strong>的投稿。
+      </p>
 
-      <blockquote>
-        课题可以荒诞，但思维必须严谨；<br />
-        表达可以有趣，但逻辑必须自洽；<br />
-        形式可以解构，但绝不允许造假。
-      </blockquote>
+      <!-- Core Principles -->
+      <div class="bg-(--color-bg-secondary) border-l-4 border-(--color-accent) rounded-r-lg p-5 mb-6">
+        <ul class="space-y-2 text-(--color-text-primary)">
+          <li class="flex items-start gap-2">
+            <span class="text-(--color-accent) font-bold mt-0.5">▸</span>
+            <span>课题可以荒诞，但<strong>思维必须严谨</strong></span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-(--color-accent) font-bold mt-0.5">▸</span>
+            <span>表达可以有趣，但<strong>逻辑必须自洽</strong></span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-(--color-accent) font-bold mt-0.5">▸</span>
+            <span>形式可以解构，但<strong>绝不允许造假</strong></span>
+          </li>
+        </ul>
+      </div>
 
-      <p>如果你的研究同时满足以上三条，恭喜你，你比很多正经期刊的来稿质量都高了。</p>
+      <p class="text-(--color-text-secondary) text-sm italic mb-6">
+        如果你的研究同时满足以上三条，恭喜你，你比很多正经期刊的来稿质量都高了。
+      </p>
 
-      <p>《DAMN》欢迎来自一切学科领域的投稿，包括但不限于：自然科学、工程技术、社会科学、人文艺术、哲学思辨、生活科学、游戏研究、美食学、影视分析、武侠学、神话学、网络文化学……以及任何尚未被命名的学科。</p>
+      <p class="text-(--color-text-primary) mb-4 leading-relaxed">
+        征稿领域包括但不限于：自然科学、工程技术、社会科学、人文艺术、哲学思辨、生活科学、游戏研究、美食学、影视分析、武侠学、神话学、网络文化学……<strong>以及任何尚未被命名的学科。</strong>
+      </p>
 
-      <p>我们尤其欢迎以下类型的研究：</p>
-      <ul>
-        <li>用科学方法解析日常生活中的荒诞现象（例：为什么微信消息"在吗"的回复率与发送时间呈非U型曲线分布）</li>
-        <li>用荒诞视角重新审视严肃学术问题（例：基于博弈论的宿舍空调温度战争研究）</li>
-        <li>跨学科融合的奇思妙想（例：用流体力学分析食堂排队动力学）</li>
-        <li>对社会现象的解构式研究（例："开会时长"与"实际产出"的负相关性实证分析）</li>
-        <li>任何让你在深夜灵光一闪、拍案叫绝的研究设想</li>
+      <p class="text-(--color-text-primary) mb-3 font-semibold">我们尤其欢迎以下类型的研究：</p>
+      <div class="space-y-3 mb-6">
+        <div class="flex items-start gap-3 bg-(--color-bg-secondary) rounded-lg p-3">
+          <span class="text-(--color-link) text-lg leading-none mt-0.5">⚗️</span>
+          <span class="text-(--color-text-primary) text-sm">用科学方法解析日常生活中的荒诞现象 <span class="text-(--color-text-secondary) italic">——例：为什么微信消息"在吗"的回复率与发送时间呈非U型曲线分布</span></span>
+        </div>
+        <div class="flex items-start gap-3 bg-(--color-bg-secondary) rounded-lg p-3">
+          <span class="text-(--color-link) text-lg leading-none mt-0.5">🔬</span>
+          <span class="text-(--color-text-primary) text-sm">用荒诞视角重新审视严肃学术问题 <span class="text-(--color-text-secondary) italic">——例：基于博弈论的宿舍空调温度战争研究</span></span>
+        </div>
+        <div class="flex items-start gap-3 bg-(--color-bg-secondary) rounded-lg p-3">
+          <span class="text-(--color-link) text-lg leading-none mt-0.5">🧬</span>
+          <span class="text-(--color-text-primary) text-sm">跨学科融合的奇思妙想 <span class="text-(--color-text-secondary) italic">——例：用流体力学分析食堂排队动力学</span></span>
+        </div>
+        <div class="flex items-start gap-3 bg-(--color-bg-secondary) rounded-lg p-3">
+          <span class="text-(--color-link) text-lg leading-none mt-0.5">📊</span>
+          <span class="text-(--color-text-primary) text-sm">对社会现象的解构式研究 <span class="text-(--color-text-secondary) italic">——例："开会时长"与"实际产出"的负相关性实证分析</span></span>
+        </div>
+        <div class="flex items-start gap-3 bg-(--color-bg-secondary) rounded-lg p-3">
+          <span class="text-(--color-link) text-lg leading-none mt-0.5">💡</span>
+          <span class="text-(--color-text-primary) text-sm">任何让你在深夜灵光一闪、拍案叫绝的研究设想</span>
+        </div>
+      </div>
+
+      <p class="text-(--color-text-secondary) text-sm italic bg-(--color-bg-tertiary) rounded-lg p-3">
+        💤 如果你的灵光一闪发生在凌晨，请务必先记下来再睡觉。根据我们的非正式统计，凌晨灵感的存活率不足12%。
+      </p>
+    </section>
+
+    <!-- Section 2: 格式规范 -->
+    <section class="mb-12">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-1.5 h-8 bg-(--color-accent) inline-block rounded-full"></span>
+        <h2 class="text-xl font-bold text-(--color-accent)" style="font-family: var(--font-serif);">
+          投稿格式规范 / Format Requirements
+        </h2>
+      </div>
+
+      <p class="text-(--color-text-primary) mb-4 leading-relaxed">
+        投稿内容可以采用<strong>中文</strong>或<strong>英文</strong>。
+      </p>
+
+      <!-- File Requirements -->
+      <h3 class="text-base font-semibold text-(--color-text-primary) mb-3 flex items-center gap-2">
+        <span class="text-(--color-accent)">◆</span> 文件要求
+      </h3>
+      <ul class="space-y-2 mb-6 text-sm">
+        <li class="flex items-start gap-2 text-(--color-text-primary)">
+          <span class="text-(--color-accent) mt-1">✦</span>
+          <span>接受格式：<strong>Word（.docx）、Markdown</strong> 等可编辑格式。如被录取，会直接进行排版优化并发表。</span>
+        </li>
+        <li class="flex items-start gap-2 text-(--color-text-primary)">
+          <span class="text-(--color-accent) mt-1">✦</span>
+          <span>图表请尽量清晰，分辨率不低于<span class="text-(--color-text-secondary) italic">"能看清楚"</span>的程度。</span>
+        </li>
+        <li class="flex items-start gap-2 text-(--color-text-primary)">
+          <span class="text-(--color-accent) mt-1">✦</span>
+          <span>公式推荐使用 LaTeX 排版，手写拍照也行——<span class="text-(--color-text-secondary) italic">只要你的字比医生的处方好认。</span></span>
+        </li>
       </ul>
 
-      <p>（如果你的灵光一闪发生在凌晨，请务必先记下来再睡觉。根据我们的非正式统计，凌晨灵感的存活率不足12%。）</p>
+      <!-- Paper Structure -->
+      <h3 class="text-base font-semibold text-(--color-text-primary) mb-3 flex items-center gap-2">
+        <span class="text-(--color-accent)">◆</span> 论文结构要求
+      </h3>
+      <p class="text-(--color-text-primary) text-sm mb-3">
+        《DAMN》要求投稿者采用<strong>正规学术论文格式</strong>，具体包括：
+      </p>
+      <div class="space-y-2 mb-6">
+        <div class="flex items-start gap-3 border border-(--color-border) rounded-lg p-3">
+          <span class="text-(--color-accent) font-mono font-bold text-sm min-w-[24px]">01</span>
+          <div>
+            <span class="text-(--color-text-primary) text-sm font-semibold">标题</span>
+            <span class="text-(--color-text-primary) text-sm"> —— 得有。</span>
+            <span class="text-(--color-text-secondary) text-sm italic">好标题的标准是：让导师看到会沉默，让朋友看到会转发，让陌生人看到会点进来。</span>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 border border-(--color-border) rounded-lg p-3">
+          <span class="text-(--color-accent) font-mono font-bold text-sm min-w-[24px]">02</span>
+          <div>
+            <span class="text-(--color-text-primary) text-sm font-semibold">摘要</span>
+            <span class="text-(--color-text-primary) text-sm"> —— 必须提供，用一段话概括研究的核心发现。</span>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 border border-(--color-border) rounded-lg p-3">
+          <span class="text-(--color-accent) font-mono font-bold text-sm min-w-[24px]">03</span>
+          <div>
+            <span class="text-(--color-text-primary) text-sm font-semibold">引言</span>
+            <span class="text-(--color-text-primary) text-sm"> —— 说明研究背景和动机。</span>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 border border-(--color-border) rounded-lg p-3">
+          <span class="text-(--color-accent) font-mono font-bold text-sm min-w-[24px]">04</span>
+          <div>
+            <span class="text-(--color-text-primary) text-sm font-semibold">研究过程</span>
+            <span class="text-(--color-text-primary) text-sm"> —— 可以是数据分析、实验、调查、模型构建、理论推导等任何正规方法。</span>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 border border-(--color-border) rounded-lg p-3">
+          <span class="text-(--color-accent) font-mono font-bold text-sm min-w-[24px]">05</span>
+          <div>
+            <span class="text-(--color-text-primary) text-sm font-semibold">结果与讨论</span>
+            <span class="text-(--color-text-primary) text-sm"> —— 你发现了什么。有图表更佳。</span>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 border border-(--color-border) rounded-lg p-3">
+          <span class="text-(--color-accent) font-mono font-bold text-sm min-w-[24px]">06</span>
+          <div>
+            <span class="text-(--color-text-primary) text-sm font-semibold">结论</span>
+            <span class="text-(--color-text-primary) text-sm"> —— 一句话总结你的发现，并展望未来研究方向。</span>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 border border-(--color-border) rounded-lg p-3">
+          <span class="text-(--color-accent) font-mono font-bold text-sm min-w-[24px]">07</span>
+          <div>
+            <span class="text-(--color-text-primary) text-sm font-semibold">参考文献</span>
+            <span class="text-(--color-text-primary) text-sm"> —— 如果引用了他人的资料，请正规标注。</span>
+            <p class="text-(--color-text-secondary) text-xs italic mt-1">引用其他《DAMN》文章也完全可以，这会让我们非常感动。引用《SHIT》期刊的文章也行，我们尊重同行。引用你自己之前写的但没人看的课程论文也可以——至少在这里它终于被引用了。</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- 格式规范 -->
-      <h2>投稿格式规范 / Format Requirements</h2>
+    <!-- Section 3: 投稿方式 -->
+    <section class="mb-12">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-1.5 h-8 bg-(--color-accent) inline-block rounded-full"></span>
+        <h2 class="text-xl font-bold text-(--color-accent)" style="font-family: var(--font-serif);">
+          投稿方式 / How to Submit
+        </h2>
+      </div>
 
-      <p>投稿内容可以采用中文，也可以采用英文。</p>
+      <div class="bg-(--color-bg-secondary) rounded-lg p-6 mb-6 space-y-4">
+        <div class="flex items-start gap-3">
+          <span class="text-(--color-accent) text-lg">①</span>
+          <p class="text-(--color-text-primary) text-sm">
+            将稿件发送至 <a href="mailto:470045806@qq.com" class="font-semibold">470045806@qq.com</a>，邮件标题注明 <strong>"《DAMN》投稿"</strong>
+          </p>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-(--color-accent) text-lg">②</span>
+          <p class="text-(--color-text-primary) text-sm">
+            <strong>清晰标明作者信息：</strong>第一作者、共同第一作者、第二作者、第三作者……允许有通讯作者，并提供每位作者的单位
+          </p>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-(--color-accent) text-lg">③</span>
+          <p class="text-(--color-text-primary) text-sm">
+            <strong>建议字数：2,000 - 10,000 字</strong>
+            <span class="text-(--color-text-secondary) italic">——太短不足以论证，太长则说明你可能真的发现了什么——那建议你投正经期刊。</span>
+          </p>
+        </div>
+      </div>
 
-      <p><strong>投稿文件要求：</strong></p>
-      <ul>
-        <li>接受格式：Word（.docx）、Markdown 等可编辑格式。如被录取，会直接进行排版优化并发表。</li>
-        <li>图表请尽量清晰，分辨率不低于"能看清楚"的程度。</li>
-        <li>公式推荐使用LaTeX排版，手写拍照也行——只要你的字比医生的处方好认。</li>
-      </ul>
+      <!-- Important Notes -->
+      <div class="border border-amber-600/30 bg-amber-600/5 rounded-lg p-4 mb-4">
+        <p class="text-sm text-(--color-text-primary) mb-1">
+          <strong>⚠️ 署名注意：</strong>挂名、单位的时候，一定要经得本人和单位同意！<strong>不建议挂靠正经单位</strong>，我们害怕律师函。
+        </p>
+        <p class="text-xs text-(--color-text-secondary) italic mt-2">
+          特别提醒：请勿将导师列为通讯作者但不告知导师。我们见过太多学术悲剧的开端，不想再见证新的。如果你非要挂，建议先确认导师的幽默感评级在A级以上。
+        </p>
+      </div>
 
-      <p><strong>《DAMN》要求投稿者采用正规学术论文格式，具体包括：</strong></p>
-      <ul>
-        <li><strong>标题：</strong>得有。好标题的标准是：让导师看到会沉默，让朋友看到会转发，让陌生人看到会点进来。</li>
-        <li><strong>摘要：</strong>必须提供，用一段话概括研究的核心发现。</li>
-        <li><strong>引言：</strong>说明研究背景和动机。</li>
-        <li><strong>研究过程：</strong>如何进行研究的。可以是数据分析、实验、调查、模型构建、理论推导等任何正规方法。</li>
-        <li><strong>结果与讨论：</strong>你发现了什么。有图表更佳。</li>
-        <li><strong>结论：</strong>一句话总结你的发现，并展望未来研究方向。</li>
-        <li><strong>参考文献：</strong>如果引用了他人的资料，请正规标注。（引用其他《DAMN》文章也完全可以，这会让我们非常感动。引用《SHIT》期刊的文章也行，我们尊重同行。引用你自己之前写的但没人看的课程论文也可以——至少在这里它终于被引用了。）</li>
-      </ul>
+      <div class="flex flex-wrap gap-3 text-sm">
+        <span class="px-3 py-1.5 bg-(--color-bg-tertiary) text-(--color-text-primary) rounded-full font-medium">✅ 免费投稿</span>
+        <span class="px-3 py-1.5 bg-(--color-bg-tertiary) text-(--color-text-primary) rounded-full font-medium">✅ 在线发表</span>
+        <span class="px-3 py-1.5 bg-(--color-bg-tertiary) text-(--color-text-primary) rounded-full font-medium">✅ 支持一稿多投</span>
+        <span class="px-3 py-1.5 bg-(--color-bg-tertiary) text-(--color-text-primary) rounded-full font-medium">✅ 不收取任何费用</span>
+      </div>
 
-      <!-- 投稿方式 -->
-      <h2>投稿方式 / How to Submit</h2>
+      <p class="text-(--color-text-secondary) text-sm italic mt-4">
+        如果你的文章同时被《DAMN》和《Nature》录用，我们会以你为荣。
+      </p>
+    </section>
 
-      <p><strong>请将稿件发送至邮箱：<a href="mailto:470045806@qq.com">470045806@qq.com</a></strong></p>
-      <p><strong>邮件标题请注明"《DAMN》投稿"</strong></p>
+    <!-- Section 4: 审稿流程 -->
+    <section class="mb-12">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-1.5 h-8 bg-(--color-accent) inline-block rounded-full"></span>
+        <h2 class="text-xl font-bold text-(--color-accent)" style="font-family: var(--font-serif);">
+          审稿流程 / Review Process
+        </h2>
+      </div>
 
-      <p><strong>请清晰标明：</strong>第一作者，共同第一作者，第二作者，第三作者……，允许有通讯作者。并提供每位作者的单位。</p>
+      <p class="text-(--color-text-primary) text-sm mb-4 leading-relaxed">
+        稿件经编辑初审后，将由编委会判断是否符合《DAMN》的收稿标准。我们重点审查以下三点：
+      </p>
 
-      <p><strong>注意：</strong>挂名、单位的时候，一定要经得本人和单位同意！不建议挂靠正经单位，我们害怕律师函。</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+        <div class="bg-(--color-bg-secondary) border border-(--color-border) rounded-lg p-4 text-center">
+          <div class="text-2xl mb-2">🎯</div>
+          <p class="text-sm font-semibold text-(--color-text-primary) mb-1">新颖有趣</p>
+          <p class="text-xs text-(--color-text-secondary) italic">平庸是唯一的原罪</p>
+        </div>
+        <div class="bg-(--color-bg-secondary) border border-(--color-border) rounded-lg p-4 text-center">
+          <div class="text-2xl mb-2">🔗</div>
+          <p class="text-sm font-semibold text-(--color-text-primary) mb-1">严谨有逻辑</p>
+          <p class="text-xs text-(--color-text-secondary) italic">荒诞的是课题，不是方法</p>
+        </div>
+        <div class="bg-(--color-bg-secondary) border border-(--color-border) rounded-lg p-4 text-center">
+          <div class="text-2xl mb-2">🚫</div>
+          <p class="text-sm font-semibold text-(--color-text-primary) mb-1">不造假不抄袭</p>
+          <p class="text-xs text-(--color-text-secondary) italic">零容忍</p>
+        </div>
+      </div>
 
-      <p>（特别提醒：请勿将导师列为通讯作者但不告知导师。我们见过太多学术悲剧的开端，不想再见证新的。如果你非要挂，建议先确认导师的幽默感评级在A级以上。）</p>
+      <div class="bg-(--color-bg-secondary) rounded-lg p-4 flex items-center gap-3">
+        <span class="text-2xl">⏱️</span>
+        <div>
+          <p class="text-sm text-(--color-text-primary)">
+            <strong>审稿周期：目标 72 小时内</strong>
+          </p>
+          <p class="text-xs text-(--color-text-secondary) italic mt-1">
+            如果超过一周没有回复，大概率是我们的邮箱又被垃圾邮件过滤器误伤了，请再发一遍。每一个投稿无论录用与否，我们都一定会给予回复的！
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <p>免费投稿，在线发表。不收取任何费用。</p>
+    <!-- Section 5: 内容底线 -->
+    <section class="mb-12">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-1.5 h-8 bg-(--color-accent) inline-block rounded-full"></span>
+        <h2 class="text-xl font-bold text-(--color-accent)" style="font-family: var(--font-serif);">
+          内容底线 / Content Policy
+        </h2>
+      </div>
 
-      <p>建议字数：2000-10000字。太短不足以论证，太长则说明你可能真的发现了什么——那建议你投正经期刊。</p>
+      <p class="text-(--color-text-primary) text-sm mb-4">以下内容将被<strong>直接拒稿</strong>，不予讨论：</p>
 
-      <p><strong>支持一稿多投</strong>——我们对自己的文章质量有信心，不怕竞争。如果你的文章同时被《DAMN》和《Nature》录用，我们会以你为荣。</p>
-
-      <!-- 审稿流程 -->
-      <h2>审稿流程 / Review Process</h2>
-
-      <p>稿件经编辑初审后，将由编委会判断是否符合《DAMN》的收稿标准。我们重点审查以下三点：</p>
-      <ol>
-        <li>选题是否足够新颖有趣（平庸是唯一的原罪）</li>
-        <li>论证过程是否严谨有逻辑（荒诞的是课题，不是方法）</li>
-        <li>是否存在造假或抄袭（零容忍）</li>
-      </ol>
-
-      <p>审稿周期：目标72小时内。如果超过一周没有回复，大概率是我们的邮箱又被垃圾邮件过滤器误伤了，请再发一遍。每一个投稿无论录用与否，我们都一定会给予回复的！</p>
-
-      <!-- 内容底线 -->
-      <h2>内容底线 / Content Policy</h2>
-
-      <p>以下内容将被直接拒稿，不予讨论：</p>
-      <ul>
-        <li>一切形式的学术造假、数据编造、抄袭剽窃。我们开玩笑，但不开骗局。</li>
-        <li>涉及人身攻击、地域歧视、性别歧视等恶意内容。幽默的边界是温和的冒犯，而非伤害。</li>
-        <li>涉及政治敏感、违法违规的内容。我们想长久地活下去。</li>
-        <li>AI一键生成的水文。你可以用AI辅助，但核心创意和思考必须是你自己的。我们要的是人类的灵光一闪，不是机器的流水线。</li>
-      </ul>
-    </div>
+      <div class="space-y-2">
+        <div class="flex items-start gap-3 bg-red-900/10 border border-red-800/20 rounded-lg p-3">
+          <span class="text-red-400 font-bold text-sm mt-0.5">✕</span>
+          <span class="text-(--color-text-primary) text-sm">一切形式的<strong>学术造假、数据编造、抄袭剽窃</strong>。我们开玩笑，但不开骗局。</span>
+        </div>
+        <div class="flex items-start gap-3 bg-red-900/10 border border-red-800/20 rounded-lg p-3">
+          <span class="text-red-400 font-bold text-sm mt-0.5">✕</span>
+          <span class="text-(--color-text-primary) text-sm">涉及<strong>人身攻击、地域歧视、性别歧视</strong>等恶意内容。幽默的边界是温和的冒犯，而非伤害。</span>
+        </div>
+        <div class="flex items-start gap-3 bg-red-900/10 border border-red-800/20 rounded-lg p-3">
+          <span class="text-red-400 font-bold text-sm mt-0.5">✕</span>
+          <span class="text-(--color-text-primary) text-sm">涉及<strong>政治敏感、违法违规</strong>的内容。我们想长久地活下去。</span>
+        </div>
+        <div class="flex items-start gap-3 bg-red-900/10 border border-red-800/20 rounded-lg p-3">
+          <span class="text-red-400 font-bold text-sm mt-0.5">✕</span>
+          <span class="text-(--color-text-primary) text-sm"><strong>AI一键生成的水文</strong>。你可以用AI辅助，但核心创意和思考必须是你自己的。我们要的是人类的灵光一闪，不是机器的流水线。</span>
+        </div>
+      </div>
+    </section>
 
     <!-- Bottom CTA -->
-    <div class="mt-12 bg-(--color-accent)/10 border border-(--color-accent)/30 rounded p-6 text-center">
-      <p class="text-(--color-text-primary) font-semibold mb-2">准备好了？/ Ready?</p>
-      <a href="mailto:470045806@qq.com" class="text-lg text-(--color-accent) font-mono">
+    <div class="bg-(--color-accent)/10 border border-(--color-accent)/30 rounded-lg p-8 text-center">
+      <p class="text-(--color-text-primary) font-bold text-lg mb-3" style="font-family: var(--font-serif);">准备好了？/ Ready?</p>
+      <a href="mailto:470045806@qq.com" class="text-2xl text-(--color-accent) font-mono font-bold hover:text-(--color-accent-hover)">
         470045806@qq.com
       </a>
-      <p class="text-xs text-(--color-text-secondary) mt-2">我们承诺以最快的速度审稿 / We promise the fastest review possible</p>
+      <p class="text-sm text-(--color-text-secondary) mt-3">我们承诺以最快的速度审稿 / We promise the fastest review possible</p>
+      <p class="text-xs text-(--color-text-secondary) mt-1 italic">
+        我们的目标是让你投稿后还没来得及后悔就已经发表了。
+      </p>
     </div>
   </div>
 </BaseLayout>
