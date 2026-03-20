@@ -36,32 +36,32 @@ const dateStr = date.toLocaleDateString('zh-CN', { year: 'numeric', month: '2-di
       </h1>
 
       <!-- Authors -->
-      <div class="space-y-1 mb-4">
+      <div class="space-y-1.5 mb-5">
         {authors.map((author, i) => (
-          <p class="text-sm text-(--color-text-primary)">
-            {author.name}<sup class="text-(--color-accent)">{i + 1}</sup>
+          <p class="text-lg font-semibold text-(--color-text-primary)">
+            {author.name}<sup class="text-(--color-accent) text-sm ml-0.5">{i + 1}</sup>
           </p>
         ))}
       </div>
 
       <!-- Affiliations -->
-      <div class="space-y-0.5 mb-4">
+      <div class="space-y-1 mb-5">
         {authors.map((author, i) => (
-          <p class="text-xs text-(--color-text-secondary)">
-            <sup>{i + 1}</sup> {author.affiliation}
+          <p class="text-sm text-(--color-text-secondary)">
+            <sup class="text-(--color-accent)">{i + 1}</sup> {author.affiliation}
           </p>
         ))}
       </div>
 
       <!-- Date -->
-      <p class="text-xs text-(--color-text-secondary)">
-        发表日期 / Published: <time datetime={date.toISOString()}>{dateStr}</time>
+      <p class="text-sm text-(--color-text-secondary)">
+        发表日期 / Published: <time datetime={date.toISOString()} class="font-medium text-(--color-text-primary)">{dateStr}</time>
       </p>
 
       <!-- Contact email -->
       {email && (
-        <p class="text-xs text-(--color-text-secondary) mt-2">
-          通讯邮箱 / Contact: <a href={`mailto:${email}`} class="text-(--color-accent) hover:underline">{email}</a>
+        <p class="text-sm text-(--color-text-secondary) mt-1.5">
+          通讯邮箱 / Contact: <a href={`mailto:${email}`} class="font-medium text-(--color-accent) hover:underline">{email}</a>
         </p>
       )}
 
